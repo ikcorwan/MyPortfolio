@@ -1,8 +1,31 @@
 .section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  	height: calc(var(--vh, 1vh) * 100);
+  	width: 100%;
+}
+
+.container {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	box-sizing: border-box;
+  	width:100%;
+  	padding: 0 15px;
+ 	margin: 0 auto;
+  	@include mq(small) {
+  		max-width:540px;
+  	}
+  	@include mq(medium) {
+  		max-width:720px;
+  	}
+  	@include mq(large) {
+  		max-width:960px;
+  	}
+  	@include mq(xlarge) {
+  		max-width:1140px;
+  	}
+
 }
