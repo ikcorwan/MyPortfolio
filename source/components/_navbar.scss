@@ -1,0 +1,97 @@
+
+.top {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+}
+
+// *** Navbar ***
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 1rem 0;
+	&__brand {
+		width: 10rem;
+		height: 2rem;
+		background: url($logo) no-repeat center;
+		background-size: cover;	
+	}
+}
+
+// *** Menu ***
+
+.menu {
+	&__item-list {
+		position: absolute;
+		right: 0;
+		top: 9vh;
+		height: 91vh;
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content: center;
+		width: 100%;
+		border: 1px solid rgba(39,42,54,0.8);
+		background: linear-gradient(135deg, rgba(25,40,53,1) 0%, rgba(39,42,54,1) 49%, rgba(39,42,54,1) 100%);
+		transform:translateX(100%);
+		transition: transform 0.5s;
+		&--is-active {
+			transform: translateX(0%);
+		}
+	}
+	&__item {
+		padding: 20px 0;
+		font-size: 0.9rem;
+		font-weight: 700;
+		letter-spacing: .4rem;
+		text-transform: uppercase;
+		opacity: 0;
+	}
+	&__link {
+		color:$colorWhite;
+		text-decoration: none;
+		&:hover {
+    		color: $colorPrimary;
+    	}
+	}
+}
+
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+// *** Media Queries ***
+@include mq (medium) {
+	.menu {
+		&__item-list {
+			position: static;
+			height: auto;
+			justify-content: flex-end;
+			flex-direction:row;
+			transform:none;
+			background: transparent;
+			border: none;
+			padding-top: 0;
+			
+
+		}
+		&__item {
+			margin: 0 0 0 2rem;
+			opacity: 1;
+			font-size: 0.75rem;
+			letter-spacing: .3rem;
+		}
+	}
+}

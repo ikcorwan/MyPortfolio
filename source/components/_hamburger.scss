@@ -1,0 +1,54 @@
+// *** Hamburger ***
+.hamburger {
+	width: 30px;
+	display: block;
+	margin: 0 0 0 1rem;
+	cursor: pointer;
+	&__line {
+		height: 3px;
+		margin: 5px 0;
+		border-radius: 9px;
+		transition: all 0.4s ease;
+	}
+	&__line-1 {
+		width: 30px;
+		background-color:#E8E6CE;
+	}
+	&__line-2 {
+		width: 20px;
+		background-color: $colorWhite;
+	}
+	&__line-3 {
+		width: 25px;
+		background-color: $colorAccent;
+	}
+	&:hover .hamburger__line {
+		width: 30px;
+	}
+}
+
+
+// ------------------------  Hamburger - Animation ---------------------
+
+.hamburger--is-active {
+	.hamburger__line-1 {
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+	.hamburger__line-2 {
+	opacity:0;
+	}
+	.hamburger__line-3 {
+	background-color: $colorWhite;
+	width: 30px;
+	transform: rotate(45deg) translate(-5px, -6px);
+	}
+}
+
+
+// -------------------------- Media Queries ---------------------------
+
+@include mq(medium) {
+	.hamburger {
+		display: none;
+	}
+}
