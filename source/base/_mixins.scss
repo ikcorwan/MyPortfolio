@@ -11,3 +11,10 @@
 		@error '"#{$breakpoint}" - I dont know this value';
 	}
 }
+
+// *** Box ***
+
+@mixin box($width, $height: $width) {
+  	width: $width;
+  	height: $height;
+}

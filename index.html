@@ -13,27 +13,42 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-	<header>
+	<header class="top">
 		<div class="container">
-			<a href="#" class="brand"></a>
-			<nav class="menu">
-				<ul class="menu__item-list">
-					<li class="menu__item"><a href="#about-me" class="menu__link">O mnie</a></li>
-					<li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
-					<li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
-				</ul>
-			</nav>
+			<div class="navbar">
+				<a href="#" class="navbar__brand"></a>
+				<nav class="menu">
+					<ul class="menu__item-list">
+						<li class="menu__item"><a href="#about-me" class="menu__link">O mnie</a></li>
+						<li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
+						<li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
+					</ul>
+				</nav>
+				<div class="hamburger">
+					<div class="hamburger__line hamburger__line-1"></div>
+					<div class="hamburger__line hamburger__line-2"></div>
+					<div class="hamburger__line hamburger__line-3"></div>
+				</div>
+			</div>
 		</div>
 	</header>
 
 	<section id="intro" class="section">
+		<div class="banner">
+			<div class="banner__wrap">
+				<div class="banner__particles">
+					<canvas class="banner__canvas"></canvas>
+				</div>
+			</div>
+		</div>
+
 		<div class="container">
 			<div class="intro__text">
 				<h1 class="intro__title">Witaj na moim portfolio<span class="span--theme-red">.</span></h1>
 				<h2 class="intro__subtitle">Junior Front-End Developer <hr class="hr-text" data-content="AND"> Web Designer </h2>
 			</div>
 			<div class="intro__btn">
-				<a href="#about" role="button" class="button button--is-transparent">Poznaj mnie</a>
+				<a href="#about-me" role="button" class="button button--is-transparent">Poznaj mnie</a>
 			</div>
 		</div>
 	</section>
@@ -109,6 +124,7 @@
 		</footer>	
 	</section>
 <!-- JavaScript -->
+<script src="javascript/particles.js"></script>
 <script src="javascript/main.js"></script>
 </body>
 </html>
