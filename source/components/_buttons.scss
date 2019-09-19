@@ -1,0 +1,36 @@
+.button {
+  	display: inline-block;
+  	width: 70%;
+  	text-decoration: none;
+  	color: $colorPrimary;
+	border:1px solid $colorPrimary;
+	background: rgba(22,43,56,0.6);
+  	border-radius: 0.5rem;
+  	font-size: 1rem;
+  	font-weight: 700;
+	line-height: 2rem;
+	letter-spacing: .2rem;
+  	text-transform: uppercase;
+  	margin: 0.5rem;
+  	padding:.375rem 1rem;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+// *** Media Queries ***
+@include mq (medium) {
+	.button {
+		width: auto;
+		color: $colorDirtyWhite;
+		border:1px solid $colorDirtyWhite;
+		&:hover {
+			color:$colorPrimary;
+			border:1px solid $colorPrimary;
+			background: rgba(22,43,56,0.6);
+		}
+		&--is-transparent {
+			background: transparent;
+		}
+	}
+
+}

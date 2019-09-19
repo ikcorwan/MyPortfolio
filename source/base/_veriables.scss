@@ -7,11 +7,14 @@ $fontAccent: ('Playfair Display', serif);
 
 $colorPrimary: #d82f36;
 $colorWhite:#FFFFFF;
+$colorDirtyWhite:#E8E6CE;
 $colorAccent:#A48990;
 $colorBlack:#000000;
 $colorBG-Menu: rgba(48, 53, 60, 0.7);
 
+// *** SHADOWS ***
 $textShadow:.1rem .1rem .1rem $colorBlack;
+$textShadowSub:.03rem .03rem .05rem $colorBlack;
 
 // *** IMAGES ***
 
