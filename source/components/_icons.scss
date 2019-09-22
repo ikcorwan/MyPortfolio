@@ -2,6 +2,9 @@
 	color: $colorAccent;
 	font-size: 2rem;
 	opacity: .2;
+  &:hover {
+    opacity: 0.4;
+  }
 }
 
 

@@ -73,7 +73,7 @@
 
 
 // *** Media Queries ***
-@include mq (medium) {
+@include mq (large) {
 	.menu {
 		&__item-list {
 			position: static;

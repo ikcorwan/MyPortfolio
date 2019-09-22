@@ -47,7 +47,7 @@
 
 // -------------------------- Media Queries ---------------------------
 
-@include mq(medium) {
+@include mq(large) {
 	.hamburger {
 		display: none;
 	}

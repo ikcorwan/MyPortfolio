@@ -18,7 +18,7 @@
 }
 
 // *** Media Queries ***
-@include mq (medium) {
+@include mq (large) {
 	.button {
 		width: auto;
 		color: $colorDirtyWhite;
