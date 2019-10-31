@@ -48,7 +48,7 @@
 				<h1 class="intro__title">Witaj na moim portfolio<span class="span--theme-red">.</span></h1>
 				<h2 class="intro__subtitle">Junior Front-End Developer <hr class="hr-text" data-content="AND"> Web Designer </h2>
 				<div class="intro__btn">
-					<a href="#about-me" role="button" class="button button--is-transparent">Poznaj mnie</a>
+					<a href="#about-me" role="button" class="button button__intro">Poznaj mnie</a>
 				</div>
 				<div class="intro__arrow">
 					<a href="#about-me" role="button">
@@ -90,21 +90,46 @@
 	</section>
 
 <!-- Start Portfolio Section -->
-	<section id="portfolio" class="section">
-		<div class="skills">
-			<div class="container container__flex">
-				<div class="skills__text">
-					<p class="paragraph paragraph--theme-white">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
+	<section id="portfolio" class="section portfolio">
+		<div class="container">
+			<div class="portfolio__content">
+				<div class="portfolio__text">
+					<h1 class="portfolio__title">Realizacje<span class="span--theme-red">.</span></h1>
 				</div>
+				<div class="project">
+					<div class="project__info">
+						<header class="project__header">
+							<h3 class="project__heading">Portfolio</h3>
+							<div class="heading-underline"></div>
+						</header>
+						<p class ="paragraph paragraph--theme-accent">Strona stworzona z myśla o prezentowaniu moich autorskich prac. Napisana zgodnie z <strong>metodyka BEM, zasadami RWD, a także spójna z koncepcja Mobile First</strong>. Do optymalizacji pracy użyty został również <strong>preprocesor SASS</strong>.</p>
+						<div class="project__links">
+							<a class="project__link button button__portfolio" href="#">Zobacz</a>
+							<a class="project__link button button__portfolio" href="#">Sprawdź kod</a>
+						</div>	
+					</div>
+					<img class="project__img" src="images/portfolio.png" alt="Project image">
+				</div>
+
 			</div>
-		</div>  
+			<div class="portfolio__content">
+				<div class="project">
+					<div class="project__info project__info--reverse">
+						<header class="project__header">
+							<h3 class="project__heading">Remonty Krosno</h3>
+							<div class="heading-underline"></div>
+						</header>
+						<p class ="paragraph paragraph--theme-accent">Strona została wykonana dla <strong>firmy NAW-BUD</strong> świadczącej usługi remontowo-budowlane na terenie Krosna i okolic. Napisana przy pomocy <strong>frameworka Bootstrap 4</strong>. Użyty został <strong>preprocesor SASS.</strong></p>
+						<div class="project__links">
+							<a class="project__link button button__portfolio" href="#">Zobacz</a>
+							<a class="project__link button button__portfolio" href="#">Sprawdź kod</a>
+						</div>	
+					</div>
+					<img class="project__img" src="images/nawbud.png" alt="Project image">
+				</div>
+
+			</div>
+		</div>
 	</section>
 <!-- Start Contact Section -->
 	<section id="contact" class="section">

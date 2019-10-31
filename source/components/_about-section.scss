@@ -1,5 +1,9 @@
 .about-me {
   	box-shadow: inset 0px 3px 6px 0px rgba(0,0,0,0.4),inset 0px -3px 6px 0px rgba(0,0,0,0.4);
+    background: linear-gradient(90deg,rgba(62, 28, 36,.85),rgba(101, 45, 58, .85)),url("../images/promo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   	&__content {
   		display: flex;
     	flex-flow: row wrap;
@@ -60,6 +64,9 @@
 	&--theme-accent {
 		color:$colorAccent;
 	}
+  &--theme-primary {
+    color:$colorPrimary;
+  }
 }
 
 // *** Media Queries ***
