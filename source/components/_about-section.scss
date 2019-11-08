@@ -44,31 +44,6 @@
 }
 
 
-.paragraph {
-	font-size: 1rem;
-	letter-spacing: 0px;
-	font-weight: 400;
-	text-align: justify;
-	&__quotation {
-		font-size: 1.5rem;
-		line-height: 2rem;
-		letter-spacing: .1rem;
-		font-weight: 400;
-		color:$colorDirtyWhite;
-		text-align: center;
-	}
-	& strong {
-    	font-weight: 700;
-    	color: $colorDirtyWhite;
-	}
-	&--theme-accent {
-		color:$colorAccent;
-	}
-  &--theme-primary {
-    color:$colorPrimary;
-  }
-}
-
 // *** Media Queries ***
 @include mq (large) {
   .about-me {

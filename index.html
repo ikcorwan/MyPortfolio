@@ -48,7 +48,7 @@
 				<h1 class="intro__title">Witaj na moim portfolio<span class="span--theme-red">.</span></h1>
 				<h2 class="intro__subtitle">Junior Front-End Developer <hr class="hr-text" data-content="AND"> Web Designer </h2>
 				<div class="intro__btn">
-					<a href="#about-me" role="button" class="button button__intro">Poznaj mnie</a>
+					<a href="#about-me" role="button" class="button button--normal button__intro">Poznaj mnie</a>
 				</div>
 				<div class="intro__arrow">
 					<a href="#about-me" role="button">
@@ -104,8 +104,8 @@
 						</header>
 						<p class ="paragraph paragraph--theme-accent">Strona stworzona z myśla o prezentowaniu moich autorskich prac. Napisana zgodnie z <strong>metodyka BEM, zasadami RWD, a także spójna z koncepcja Mobile First</strong>. Do optymalizacji pracy użyty został również <strong>preprocesor SASS</strong>.</p>
 						<div class="project__links">
-							<a class="project__link button button__portfolio" href="#">Zobacz</a>
-							<a class="project__link button button__portfolio" href="#">Sprawdź kod</a>
+							<a class="project__link button button--normal button__portfolio" href="#">Zobacz</a>
+							<a class="project__link button button--normal button__portfolio" href="#">Sprawdź kod</a>
 						</div>	
 					</div>
 					<img class="project__img" src="images/portfolio.png" alt="Project image">
@@ -121,8 +121,8 @@
 						</header>
 						<p class ="paragraph paragraph--theme-accent">Strona została wykonana dla <strong>firmy NAW-BUD</strong> świadczącej usługi remontowo-budowlane na terenie Krosna i okolic. Napisana przy pomocy <strong>frameworka Bootstrap 4</strong>. Użyty został <strong>preprocesor SASS.</strong></p>
 						<div class="project__links">
-							<a class="project__link button button__portfolio" href="#">Zobacz</a>
-							<a class="project__link button button__portfolio" href="#">Sprawdź kod</a>
+							<a class="project__link button button--normal button__portfolio" href="#">Zobacz</a>
+							<a class="project__link button button--normal button__portfolio" href="#">Sprawdź kod</a>
 						</div>	
 					</div>
 					<img class="project__img" src="images/nawbud.png" alt="Project image">
@@ -132,51 +132,79 @@
 		</div>
 	</section>
 <!-- Start Contact Section -->
-	<section id="contact" class="section">
-		<div class="container">
+	<section id="contact" class="section contact">
+		<div class="contact__wrap">
+			<div class="container">
+				<div class="contact__content">
 			<!-- Left Box - Contact -->
-			<div class="contact">
-				<h2 class="contact__subtitle">Kontakt<span class="span--theme-red">.</span></h2>
-				<p class="paragraph">
-					Masz pytanie? Chcesz ze mną pracować?<br>
-					Jeśli chcesz mnie zatrudnić, pisz na adres:<br><br>
+					<div class="contact__text">
+						<h2 class="contact__title">Kontakt<span class="span--theme-red">.</span></h2>
+						<p class="paragraph paragraph--is-center paragraph--theme-dirty-white">
+							Masz pytanie? Chcesz ze mną pracować?<br>
+							Jeśli chcesz mnie zatrudnić, pisz na adres:<br><br>
 
-					<i class="icon icon__envelope"></i>
-					<strong>kontakt&#64;nawrocki.io</strong><br><br>
+							<i class="icon icon__envelope fas fa-envelope"></i>
+							<strong>jaroslaw&#64;nawrocki.io</strong><br><br>
 		
-					Czekam właśnie na Twoją wiadomość!
-				</p>
+							Czekam właśnie na Twoją wiadomość!
+						</p>
 
-				<a class="button" href="mailto:kontakt@nawrocki.io" role="button">
-					<i class="icon icon__paper-plane"></i>Napisz do mnie
-				</a>
-			</div>
+						<a class="button button--normal button__contact" href="mailto:jaroslaw@nawrocki.io" role="button">
+							<i class="icon icon__paper-plane far fa-paper-plane pull-left"></i>Napisz do mnie
+						</a>
+					</div>
 			<!-- Right Box - Social Media -->
-			<div class="social-media">
-				<h2 class="social-media__subtitle">Jestem tutaj<span class="span--theme-red">.</span></h2>
-				<p class="paragraph">
-					Jesteś uzależniony od mediów społecznościowych?<br>
-					A może podoba ci się to, co widzisz?<br>
-					Wiesz, gdzie mnie szukać.
-				</p>
-				<div class="social-media__item-list">
-					<a class="button" href="https://github.com/ikcorwan" target="_blank" role="button">
-						<i class="icon icon__github"></i> GitHub
-					</a>
+					<div class="contact__text">
+						<h2 class="contact__title">Jestem tutaj<span class="span--theme-red">.</span></h2>
+						<p class="paragraph paragraph--is-center paragraph--theme-dirty-white">
+							Jesteś uzależniony od mediów społecznościowych?<br>
+							A może podoba ci się to, co widzisz?<br>
+							Wiesz, gdzie mnie szukać.
+						</p>
+						<div class="social-media__item-list">
+							<a class="button button__social-media" href="https://github.com/ikcorwan" target="_blank" role="button">
+								<i class="icon icon__github fab fa-github pull-left"></i> GitHub
+							</a>
 
-					<a class="button" href="https://codepen.io/ikcorwan" target="_blank" role="button">
-						<i class="icon icon__codepen"></i> CodePen
-					</a>
+							<a class="button button__social-media" href="https://codepen.io/ikcorwan" target="_blank" role="button">
+								<i class="icon icon__codepen fab fa-codepen pull-left"></i> CodePen
+							</a>
+						</div>
+					</div>
 				</div>
-
 			</div>
 		</div>
 		<!-- Start Footer Section -->
 		<footer class="footer">
-			<p class="paragraph">Copyright &copy; 2019 <img class="p-1" src="../images/logo-footer.png" alt="logo-stopka"></p>
-			<a class="button" href="polityka-prywatnosci/index.html" role="button">
-				<i class="icon icon__padlock"></i> Polityka Prywatności
-			</a>
+			<div class="container">
+				<div class="footer__content">
+			<!-- Footer Contact Box -->	
+					<div class="footer__contact">
+						<a class="button button__footer" href="mailto:jaroslaw@nawrocki.io" title="E-mail" role="button">
+							<i class="icon icon__envelope fas fa-envelope"></i>
+						</a>
+						<a class="button button__footer" href="https://github.com/ikcorwan" title="GitHub" role="button">
+							<i class="icon icon__github fab fa-github"></i>
+						</a>
+						<a class="button button__footer" href="https://codepen.io/ikcorwan" title="CodePen" role="button">
+							<i class="icon icon__codepen fab fa-codepen"></i>
+						</a>
+					</div>
+			<!-- Footer Copyright -->	
+					<div class="footer__copyright">
+						<p class="paragraph paragraph--is-center paragraph--theme-dirty-white">Copyright &copy; 2019 <img class="footer__img" src="../images/logo-footer.png" alt="logo-stopka"></p>
+						<a class="button button__privacy-policy" href="polityka-prywatnosci/index.html" role="button">
+							<i class="icon icon__padlock fas fa-lock pull-left"></i> Polityka Prywatności
+						</a>
+					</div>
+			<!-- Footer Back to Top Icon -->
+					<div class="footer__button">
+						<a class="button button__footer button__back" href="#intro" role="button" title="Do góry">
+							<i class="icon fas fa-angle-double-up"></i> Do góry
+						</a>
+					</div>
+				</div>
+			</div>
 		</footer>	
 	</section>
 <!-- JavaScript -->
