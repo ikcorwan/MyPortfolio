@@ -1,0 +1,51 @@
+.cookies {
+  	box-shadow: inset 0px -4px 7px 0px rgba(0,0,0,0.5);
+    background: linear-gradient(90deg,rgba(62, 28, 36,.85),rgba(101, 45, 58, .85)),url("../images/promo.png");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center center;
+}
+
+.cookies__content {
+	padding: 2rem 0;
+}
+.cookies__banner {
+	position: relative;
+  	width: 100%;
+  	height: 75vh;
+  	clip-path: polygon(0 0,100% 0,100% 58vh,0 68vh);
+  	background-image: url("../images/cookies-banner.png");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: 50% 75%;
+}
+
+.cookies__wrap {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content:center;
+}
+
+
+
+.cookies__title {
+    margin: 1rem;
+    color:$colorDirtyWhite;
+    text-shadow: $textShadow;
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.cookies__subtitle {
+	padding: 1rem 0;
+	color:$colorDirtyWhite;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
