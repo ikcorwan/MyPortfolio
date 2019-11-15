@@ -40,7 +40,7 @@
 	}
 	&__privacy-policy {
 		margin: 0;
-		padding: 0;
+		padding-top: 0.5rem;
 		border:none;
 		color:#0C2530;
 		text-transform: none;
@@ -54,8 +54,13 @@
 		border-radius: 5px;
 		text-transform: uppercase;
 	}
-	&__back {
+	&__back-to-top {
 		color: $colorDirtyWhite;
+	}
+	&__back-to-home {
+    	margin-top: 25%;
+    	padding-left: 2rem;
+    	border:none;
 	}
 }
 
@@ -127,10 +132,18 @@
 				opacity:0.6;
 			}
 		}
-		&__back {
+		&__back-to-top {
 			color:$colorDirtyWhite;
 			&:hover {
 				border:1px dashed $colorDirtyWhite;
+			}
+		}
+		&__back-to-home {
+			color:$colorDirtyWhite;
+			border:none;
+			&:hover {
+				color:$colorPrimary;
+				border: none;
 			}
 		}
 	}
