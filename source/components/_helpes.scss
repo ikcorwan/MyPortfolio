@@ -1,58 +1,61 @@
 .section {
-    min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    min-height: calc(var(--vh, 1vh) * 100);
-  	width: 100%;
+		min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		min-height: calc(var(--vh, 1vh) * 100);
+		width: 100%;
 }
 
 .container {
-  	box-sizing: border-box;
-  	width:100%;
-    margin-left: auto;
-    margin-right: auto;
-  	padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    
-  	@include mq(small) {
-  		max-width:540px;
-  	}
-  	@include mq(medium) {
-  		max-width:720px;
-  	}
-  	@include mq(large) {
-  		max-width:960px;
-  	}
-  	@include mq(xlarge) {
-  		max-width:1140px;
-  	}
+		box-sizing: border-box;
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+		
+		@include mq(small) {
+			max-width:540px;
+		}
+		@include mq(medium) {
+			max-width:720px;
+		}
+		@include mq(large) {
+			max-width:960px;
+		}
+		@include mq(xlarge) {
+			max-width:1140px;
+		}
+		@include mq(xxlarge) {
+			max-width:1520px;
+		}
 }
 
 .span--theme-red {
-  color:$colorPrimary;
+	color:$colorPrimary;
 }
 
 .heading-underline {
-  width: 20%;
-  max-height: 4px;
-  max-width: 20%;
-  min-height: 4px;
-  border-radius: 30px;
-  background-color: $colorPrimary;
-  margin:20px auto 20px;
+	width: 20%;
+	max-height: 4px;
+	max-width: 20%;
+	min-height: 4px;
+	border-radius: 30px;
+	background-color: $colorPrimary;
+	margin:20px auto 20px;
 }
 
 // *** Media Queries ***
 @include mq (medium) {
-  .heading-underline {
-    width: 10%;
-  }
+	.heading-underline {
+		width: 10%;
+	}
 }
 
 @include mq (large) {
-  .heading-underline {
-    width: 15%;
-  }
-  .container--slim {
-    width: 60%;
-  }
+	.heading-underline {
+		width: 15%;
+	}
+	.container--slim {
+		width: 60%;
+	}
 }

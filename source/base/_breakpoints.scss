@@ -6,5 +6,7 @@ $breakpoints: (
 // Large devices (desktops, 992px and up)
 	large: (min-width:992px),
 // Extra large devices (large desktops, 1200px and up)
-	xlarge: (min-width:1200px),
+	xlarge: (min-width:1366px),
+// Extra extra large devices (large desktops, 1920px and up)
+	xxlarge: (min-width:1920px),
 );

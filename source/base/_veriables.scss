@@ -10,16 +10,42 @@ $colorWhite:#FFFFFF;
 $colorDirtyWhite:#E8E6CE;
 $colorAccent:#A48990;
 $colorBlack:#000000;
+$colorSilver:#162b38;
 $colorBG-Menu: rgba(48, 53, 60, 0.7);
 
 // *** SHADOWS ***
 $textShadow:.1rem .1rem .1rem $colorBlack;
 $textShadowSub:.03rem .03rem .05rem $colorBlack;
 
-// *** IMAGES ***
+// *** LOGO SVG ***
 
-$homeBackground: "../images/home-bg.png";
-$aboutBackground: "../images/about-bg.png";
-$Background: "../images/background.png";
-$contactBackground: "../images/contact-bg2.png";
-$logo: "../images/logo.png";
+$logo: "../images/logo.svg";
+$logoFooter: "../images/logo-footer.svg";
+
+// *** IMAGES ***
+	
+	// *** HOME BG ***
+		$intro_460: "../images/forest-litter_460.jpg";
+		$intro_800: "../images/forest-litter_800.jpg";
+		$intro_1366: "../images/forest-litter_1366.jpg";
+		$intro_1920: "../images/forest-litter_1920.jpg";
+	
+	// *** ABOUT BG ***
+		
+		$about_460: "../images/abstract-bg_460.png";
+		$about_800: "../images/abstract-bg_800.png";
+		$about_1366: "../images/abstract-bg_1366.png";
+		$about_1920: "../images/abstract-bg_1920.png";
+		
+	// *** CONTACT BG ***
+		
+		$contact_460: "../images/starry-sky_460.jpg";
+		$contact_800: "../images/starry-sky_800.jpg";
+		$contact_1366: "../images/starry-sky_1366.jpg";
+		$contact_1920: "../images/starry-sky_1920.jpg";
+
+
+
+$bgGradient:radial-gradient(circle, rgba(103,38,48,1) 0%, rgba(94,32,44,1) 36%, rgba(56,29,37,1) 70%, rgba(23,28,37,1) 100%);
+$footerGradient:radial-gradient(circle, rgba(6,17,23,1) 0%, rgba(8,25,33,1) 50%, rgba(6,17,23,1) 100%);
+$cookiesBackground: "../images/cookies-banner.png";

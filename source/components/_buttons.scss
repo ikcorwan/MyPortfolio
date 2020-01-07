@@ -16,6 +16,11 @@
   		margin: 0.5rem;
   		padding:.375rem 1rem;
 	}
+	&--is-disabled {
+		color: currentColor;
+		border:1px solid currentColor;
+  		cursor: not-allowed;
+	}
 	&__intro {
 		background: rgba(22,43,56,0.6);
 	}

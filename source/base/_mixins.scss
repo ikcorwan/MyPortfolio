@@ -19,3 +19,13 @@
   	height: $height;
 }
 
+// *** Background Image ***
+
+@mixin background($url, $repeat:no-repeat, $size:cover, $positionX:0, $positionY:0) {
+	background-image: url($url);
+	background-repeat: $repeat;
+	background-size: $size;
+	background-position: $positionX $positionY;
+	
+}
+

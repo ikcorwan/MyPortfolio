@@ -1,21 +1,18 @@
 .about-me {
-  	box-shadow: inset 0px 3px 6px 0px rgba(0,0,0,0.4),inset 0px -3px 6px 0px rgba(0,0,0,0.4);
-    background-image: url($aboutBackground);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  	&__content {
-  		display: flex;
-    	flex-flow: row wrap;
-    	justify-content: space-evenly;
-    	align-items: center;
-    	align-content:center;
-    	padding-top: 5vh;
-    	padding-bottom: 5vh
-  	}
-  	&__text {
-  		flex-basis:100%;
-  	}
+	box-shadow: inset 0px 3px 6px 0px rgba(0,0,0,0.4),inset 0px -3px 6px 0px rgba(0,0,0,0.4);
+	@include background ($about_460, no-repeat, cover, center, center);
+	&__content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		align-content:center;
+		padding-top: 5vh;
+		padding-bottom: 5vh
+	}
+	&__text {
+		flex-basis:100%;
+	}
 }
 
 
@@ -27,18 +24,18 @@
 	}
 	&__title {
 		font-size: 1rem;
-  	letter-spacing: .4rem;
-  	line-height: 1.5rem;
-  	text-transform: uppercase;
-  	padding: 1vh 0 0.5vh 0;
-  	opacity:.7;
+		letter-spacing: .4rem;
+		line-height: 1.5rem;
+		text-transform: uppercase;
+		padding: 1vh 0 0.5vh 0;
+		opacity:.7;
 		color:$colorAccent;
 	}
 	&__subtitle {
 		font-size: 2rem;
-    text-shadow: $textShadowSub;
+		text-shadow: $textShadowSub;
 		line-height: 2rem;
-    margin: 4vh 0;
+		margin: 4vh 0;
 		font-weight: 700;
 		color: $colorDirtyWhite;
 	}
@@ -46,18 +43,37 @@
 
 
 // *** Media Queries ***
-@include mq (large) {
-  .about-me {
-  	&__content {
-  		height: 100vh;
-  		padding-top:0;
-  		padding-bottom:0;
-  	}
-  	&__text {
-  		flex-basis:55%;
-  	}
-  }
-  .card {
-  	flex-basis:30%;
-  }
+@include mq (medium) {
+	.about-me {
+		@include background ($about_800, no-repeat, cover, center, center);
+	}
 }
+@include mq (large) {
+	.about-me {
+		&__content {
+			height: 100vh;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		&__text {
+			flex-basis:55%;
+		}
+	}
+	.card {
+		flex-basis:30%;
+	}
+}
+
+@include mq (xlarge) {
+	.about-me {
+		@include background ($about_1366, no-repeat, cover, center, center);
+		
+	}
+}
+
+@include mq (xxlarge) {
+	.about-me {
+		@include background ($about_1920, no-repeat, cover, center, center);
+	}
+}
+

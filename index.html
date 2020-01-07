@@ -6,12 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Jarosław Nawrocki - Junior Front-End Developer</title>
 	<meta name ="description" content="Junior Front-End Developer creating simple but functional websites. Have a look at my projects.">
-    <meta name="author" content="Jarosław Nawrocki">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+	<meta name="author" content="Jarosław Nawrocki">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="alternate" href="http://nawrocki.io/pl" hreflang="pl" />
 </head>
 <body>
 	<header class="top">
@@ -54,7 +55,6 @@
 				</div>
 				<div class="intro__arrow">
 					<a href="#about-me" role="button">
-
 						<i class="icon icon__arrow icon__arrow--bounce fa fa-angle-double-down"></i>
 					</a>
 				</div>
@@ -66,7 +66,7 @@
 		<div class="container">
 			<div class="about-me__content">
 				<div class="card">
-					<img class="card__image" src="images/photo-nawrocki.png" alt="photo-nawrocki"></img>
+					<img class="card__image" src="images/photo-nawrocki.png" loading="lazy" alt="photo-nawrocki"></img>
 					<h1 class="card__title">Nawrocki Jarosław</h1>
 					<h2 class="card__subtitle">
 						Junior Front-End Developer<span class="span--theme-red">.</span>
@@ -104,13 +104,13 @@
 							<h3 class="project__heading">Portfolio</h3>
 							<div class="heading-underline"></div>
 						</header>
-						<p class ="paragraph paragraph--theme-accent">This website is created for presenting my own works. It was written in accordance with the BEM metodology, RWD principles, and coherent with the Mobile First concept. I also used the SASS preprocessor to optimize my work.</p>
+						<p class ="paragraph paragraph--theme-accent">This website is created for presenting my own works. It was written in accordance with the <strong>BEM metodology, RWD principles, and coherent with the Mobile First concept.</strong> I also used the <strong>SASS preprocessor</strong> to optimize my work.</p>
 						<div class="project__links">
 							<a class="project__link button button--normal button__portfolio" href="#">View</a>
 							<a class="project__link button button--normal button__portfolio" href="#">Check the code</a>
 						</div>	
 					</div>
-					<img class="project__img" src="images/portfolio.png" alt="Project image">
+					<img class="project__img" src="images/portfolio.png" loading="lazy" alt="Project image">
 				</div>
 
 			</div>
@@ -121,20 +121,19 @@
 							<h3 class="project__heading">Remonty Krosno</h3>
 							<div class="heading-underline"></div>
 						</header>
-						<p class ="paragraph paragraph--theme-accent">The side was made for the NAW-BUD company providing renovation and construction services in Krosno and the surrounding area. It was written using the Bootstrap 4 framework. I also used the SASS preprocessor.</p>
+						<p class ="paragraph paragraph--theme-accent">The side was made for the <u>NAW-BUD</u> company providing renovation and construction services in Krosno and the surrounding area. It was written using the <strong>Bootstrap 4 framework</strong>. I also used the <strong>SASS preprocessor</strong>.</p>
 						<div class="project__links">
 							<a class="project__link button button--normal button__portfolio" href="#">View</a>
 							<a class="project__link button button--normal button__portfolio" href="#">Check the code</a>
 						</div>	
 					</div>
-					<img class="project__img" src="images/nawbud.png" alt="Project image">
+					<img class="project__img" src="images/nawbud.png" loading="lazy" alt="Project image">
 				</div>
-
 			</div>
 		</div>
 	</section>
 <!-- Start Contact Section -->
-	<section id="contact" class="section contact">
+	<section id="contact" class="contact">
 		<div class="contact__wrap">
 			<div class="container">
 				<div class="contact__content">
@@ -194,7 +193,8 @@
 					</div>
 			<!-- Footer Copyright -->	
 					<div class="footer__copyright">
-						<p class="paragraph paragraph--is-center paragraph--theme-dirty-white">Copyright &copy; 2019 <img class="footer__img" src="../images/logo-footer.png" alt="logo-footer"></p>
+						<p class="paragraph paragraph--is-center paragraph--theme-dirty-white">Copyright &copy; 2019 <img class="footer__img" src="../images/logo-footer.svg" alt="logo-footer" 
+							loading="lazy"></p>
 						<a class="button button__privacy-policy" href="privacy-policy/index.html" role="button">
 							<i class="icon icon__padlock fas fa-lock pull-left"></i> Privacy Policy
 						</a>
