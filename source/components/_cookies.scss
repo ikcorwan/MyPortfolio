@@ -1,0 +1,33 @@
+.cookies {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	align-content: center;
+	&__message {
+		padding: 6px 0px; 
+		font-size: .9rem; 
+		line-height: 1.3rem; 
+		color:$colorDirtyWhite;
+		box-shadow: inset 0px 4px 7px 0px rgba(0,0,0,0.1);
+		text-align: center; 
+		align-self: center;
+		position: fixed; 
+		bottom: 0px; 
+		background: rgba(22, 42, 57, 0.9); 
+		width: 100%; 
+		z-index: 9999;
+	}
+	&__link {
+		text-decoration: none;
+		color:$colorPrimary;
+	}
+	&__button {
+		background-color:transparent; 
+		padding: 5px 10px; 
+		color:$colorDirtyWhite; 
+		border:1px solid $colorPrimary; 
+		border-radius: 4px;
+		margin-left: 10px; 
+	}
+}
+

@@ -15,7 +15,7 @@ gulp.task('buildcss', function(){
 			outputStyle: 'compressed'
 		}))
 		.pipe(autoprefixer({
-            
+            cascade: false
         }))
         .pipe(sourcemaps.write('../maps'))
 		.pipe(gulp.dest(cssDest));

@@ -3,37 +3,43 @@
 	text-decoration: none;
 	transition: all 0.5s;
 	cursor: pointer;
+
 	&--normal {
 		width: 70%;
-  		color: $colorPrimary;
-		border:1px solid $colorPrimary;
-  		border-radius: 0.5rem;
-  		font-size: 1rem;
-  		font-weight: 400;
+		color: $colorPrimary;
+		border: 1px solid $colorPrimary;
+		border-radius: 0.5rem;
+		font-size: 1rem;
+		font-weight: 400;
 		line-height: 2rem;
 		letter-spacing: .1rem;
-  		text-transform: uppercase;
-  		margin: 0.5rem;
-  		padding:.375rem 1rem;
+		text-transform: uppercase;
+		margin: 0.5rem;
+		padding: .375rem 1rem;
 	}
+
 	&--is-disabled {
 		color: currentColor;
-		border:1px solid currentColor;
-  		cursor: not-allowed;
+		border: 1px solid currentColor;
+		cursor: not-allowed;
 	}
+
 	&__intro {
-		background: rgba(22,43,56,0.6);
+		background: rgba(22, 43, 56, 0.6);
 	}
+
 	&__portfolio {
-		background: rgba(72,35,45,0.6);
+		background: rgba(72, 35, 45, 0.6);
 		letter-spacing: .2rem;
-    	border-radius:0;
-    	padding:.25rem .75rem;
-    	font-size: 0.8rem;
+		border-radius: 0;
+		padding: .25rem .75rem;
+		font-size: 0.8rem;
 	}
+
 	&__contact {
 		margin: 1.5rem 0;
 	}
+
 	&__social-media {
 		color: $colorPrimary;
 		width: 45%;
@@ -43,111 +49,132 @@
 		margin-top: 1.5rem;
 		text-transform: none;
 	}
+
 	&__privacy-policy {
 		margin: 0;
 		padding-top: 0.5rem;
-		border:none;
-		color:#0C2530;
+		border: none;
+		color: #0C2530;
 		text-transform: none;
 		letter-spacing: 0;
 	}
+
 	&__footer {
-		color:#0C2530;
+		color: #0C2530;
 		padding: 5px;
 		margin: 0;
 		line-height: 0;
 		border-radius: 5px;
 		text-transform: uppercase;
 	}
+
 	&__back-to-top {
 		color: $colorDirtyWhite;
 	}
+
 	&__back-to-home {
-    	margin-top: 25%;
-    	padding-left: 2rem;
-    	border:none;
+		margin-top: 25%;
+		padding-left: 2rem;
+		border: none;
 	}
 }
 
- 
+
 
 // *** Media Queries ***
 @include mq (large) {
 	.button {
 		width: auto;
 		color: $colorDirtyWhite;
-		border:1px solid $colorDirtyWhite;
+		border: 1px solid $colorDirtyWhite;
+
 		&:hover {
-			color:$colorPrimary;
-			border:1px solid $colorPrimary;
+			color: $colorPrimary;
+			border: 1px solid $colorPrimary;
 		}
+
 		&__intro {
 			background: transparent;
+
 			&:hover {
-				background: rgba(22,43,56,0.6);
+				background: rgba(22, 43, 56, 0.6);
 			}
-			
+
 		}
+
 		&__portfolio {
 			background: transparent;
+
 			&:hover {
-				background: rgba(72,35,45,0.6);
+				background: rgba(72, 35, 45, 0.6);
 			}
 		}
+
 		&__contact {
 			margin-top: 1.5rem;
 			margin-bottom: 0;
 			background: transparent;
 			color: $colorPrimary;
 			border: 1px solid $colorPrimary;
+
 			&:hover {
-				color:$colorDirtyWhite;
-				background:$colorPrimary;
-    			border: 1px solid $colorPrimary;
+				color: $colorDirtyWhite;
+				background: $colorPrimary;
+				border: 1px solid $colorPrimary;
 			}
 		}
+
 		&__social-media {
 
-			color:$colorPrimary;
+			color: $colorPrimary;
 			border: none;
 			text-transform: none;
 			margin: 0.5rem;
-  			padding:.375rem 1rem;
+			padding: .375rem 1rem;
+
 			&:hover {
-				border:none;
-				color:$colorDirtyWhite;
+				border: none;
+				color: $colorDirtyWhite;
 			}
 		}
+
 		&__privacy-policy {
-			color:#0C2530;
+			color: #0C2530;
 			border: none;
+
 			&:hover {
-				color:$colorDirtyWhite;
-				border:none;
-				opacity:0.6;
+				color: $colorDirtyWhite;
+				border: none;
+				opacity: 0.6;
 			}
-			
+
 		}
+
 		&__footer {
-			color:#0C2530;
-			border:1px dashed #0C2530;
+			color: #0C2530;
+			border: 1px dashed #0C2530;
+
 			&:hover {
-				color:$colorDirtyWhite;
-				border:1px dashed $colorDirtyWhite;
-				opacity:0.6;
+				color: $colorDirtyWhite;
+				border: 1px dashed $colorDirtyWhite;
+				opacity: 0.6;
 			}
 		}
+
 		&__back-to-top {
-			color:$colorDirtyWhite;
+			color: $colorDirtyWhite;
+
 			&:hover {
-				border:1px dashed $colorDirtyWhite;
+				border: 1px dashed $colorDirtyWhite;
 			}
 		}
+
 		&__back-to-home {
-			color:$colorDirtyWhite;
-			border:none;
+			color: $colorDirtyWhite;
+			border: none;
+
 			&:hover {
-				color:$colorPrimary;
+				color: $colorPrimary;
 				border: none;
 			}
 		}

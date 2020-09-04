@@ -1,12 +1,12 @@
-.cookies {
+.privacy {
 	box-shadow: inset 0px -4px 7px 0px rgba(0,0,0,0.5);
 	background: radial-gradient(circle, rgba(124,43,60,1) 0%, rgba(119,42,56,1) 9%, rgba(86,36,45,1) 30%, rgba(59,34,44,1) 54%, rgba(24,36,46,1) 100%);
 }
 
-.cookies__content {
+.privacy__content {
 	padding: 2rem 0;
 }
-.cookies__banner {
+.privacy__banner {
 	position: relative;
 	width: 100%;
 	height: 75vh;
@@ -14,7 +14,7 @@
 	@include background ($cookiesBackground, no-repeat, cover, 50%, 75%);
 }
 
-.cookies__wrap {
+.privacy__wrap {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
@@ -24,7 +24,7 @@
 
 
 
-.cookies__title {
+.privacy__title {
 	margin: 1rem;
 	color:$colorDirtyWhite;
 	text-shadow: $textShadow;
@@ -33,7 +33,7 @@
 	font-size: 2rem;
 }
 
-.cookies__subtitle {
+.privacy__subtitle {
 	padding: 1rem 0;
 	color:$colorDirtyWhite;
 	display: flex;

@@ -38,8 +38,8 @@ const navSlide = () => {
 navSlide();
 
 // *** Particles ***
-window.onload = function() {
-  Particles.init({
-    selector: '.banner__canvas'
-  });
-};
+window.addEventListener("load",function(){
+    Particles.init({
+    	selector: '.banner__canvas'
+  	});
+},false);

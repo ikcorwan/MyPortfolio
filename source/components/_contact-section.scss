@@ -64,8 +64,11 @@
 }
 
 @include mq (xxlarge) {
-	.contact__wrap {
-		@include background ($contact_1920, no-repeat, cover, center, center);
+	.contact {
+		min-height: auto;
+		&__wrap {
+			@include background ($contact_1920, no-repeat, cover, center, center);	
+		}
 	}
 }
 
