@@ -1,24 +1,28 @@
 .portfolio {
-	box-shadow: inset 0px -4px 7px 0px rgba(0,0,0,0.5);
-	background:$bgGradient;
+	box-shadow: inset 0px -4px 7px 0px rgba(0, 0, 0, 0.5);
+	background: $bgGradient;
+
 	&__content {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-evenly;
 		align-items: center;
-		align-content:center;
+		align-content: center;
 		padding-top: 5vh;
 		padding-bottom: 5vh;
 	}
+
 	&__text {
 		padding-bottom: 10vh;
 	}
+
 	&__title {
-		color:$colorDirtyWhite;
+		color: $colorDirtyWhite;
 		text-shadow: $textShadow;
 	}
+
 	&__subtitle {
-		color:$colorAccent;
+		color: $colorAccent;
 		text-shadow: $textShadow;
 	}
 }
@@ -32,30 +36,34 @@
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	align-content:center;
+	align-content: center;
+
 	&__info {
-		flex-basis:100%;
-		order:2;
+		flex-basis: 100%;
+		order: 2;
 	}
+
 	&__heading {
 		font-size: 1rem;
 		letter-spacing: .4rem;
 		line-height: 1.5rem;
 		text-transform: uppercase;
 		padding: 1vh 0 0.5vh 0;
-		color:$colorAccent;
+		color: $colorAccent;
 	}
+
 	&__img {
-		flex-basis:100%;
+		flex-basis: 100%;
 		max-width: 300px;
 		height: auto;
 	}
+
 	&__links {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-evenly;
 		align-items: center;
-		align-content:center;
+		align-content: center;
 		padding-top: 2rem;
 	}
 }
@@ -67,30 +75,44 @@
 	.portfolio {
 		&__content {
 			height: 100vh;
-			padding-top:0;
-			padding-bottom:0;
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 
 
 	.project {
 		&__info {
-			flex-basis:45%;
-			order:0;
+			flex-basis: 45%;
+			order: 0;
+
 			&--reverse {
-				order:1;
+				order: 1;
 			}
 		}
+
 		&__img {
-			flex-basis:50%;
+			flex-basis: 50%;
 			max-width: 500px;
 			height: auto;
 		}
+
 		&__links {
 			flex-flow: row nowrap;
 		}
+
 		&__link {
 			flex-basis: 40%;
+		}
+	}
+}
+
+@include mq (xxlarge) {
+	.project {
+		&__heading {
+			font-size: 1.3rem;
+			letter-spacing: .4rem;
+			line-height: 1.8rem;
 		}
 	}
 }

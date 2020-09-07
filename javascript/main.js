@@ -18,7 +18,7 @@ window.scroll({
 
 // Scroll certain amounts from current position 
 window.scrollBy({
-	top: 150, // could be negative value
+	top: 0, // could be negative value
 	left: 0,
 	behavior: 'smooth'
 });

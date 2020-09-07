@@ -4,11 +4,16 @@ body {
 	font-size: 1rem;
 	line-height: 1.2rem;
 	max-width: 100%;
-	overflow-x:hidden;
+	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: $fontAccent;
 }
 
@@ -34,31 +39,67 @@ h3 {
 .paragraph {
 	font-size: 1rem;
 	letter-spacing: 0px;
-    line-height: 1.35rem;
+	line-height: 1.35rem;
 	font-weight: 400;
 	text-align: justify;
+
 	&__quotation {
 		font-size: 1.5rem;
 		line-height: 2rem;
 		letter-spacing: .1rem;
 		font-weight: 400;
-		color:$colorDirtyWhite;
+		color: $colorDirtyWhite;
 		text-align: center;
 	}
+
 	& strong {
-    	font-weight: 700;
-    	color: $colorDirtyWhite;
+		font-weight: 700;
+		color: $colorDirtyWhite;
 	}
+
 	&--theme-accent {
-		color:$colorAccent;
+		color: $colorAccent;
 	}
-  	&--theme-primary {
-    	color:$colorPrimary;
-  	}
-  	&--theme-dirty-white {
-    	color:$colorDirtyWhite;
-  	}
- 	&--is-center {
-  		text-align: center;
-  	}
+
+	&--theme-primary {
+		color: $colorPrimary;
+	}
+
+	&--theme-dirty-white {
+		color: $colorDirtyWhite;
+	}
+
+	&--is-center {
+		text-align: center;
+	}
+}
+
+@include mq (xxlarge) {
+	.paragraph {
+		font-size: 1.3rem;
+		line-height: 1.65rem;
+
+		&__quotation {
+			font-size: 1.7rem;
+			line-height: 2.2rem;
+		}
+	}
+
+	h1 {
+		font-size: 3rem;
+		letter-spacing: .3rem;
+		line-height: 3.5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+		letter-spacing: .2rem;
+		line-height: 2.5rem;
+	}
+
+	h3 {
+		font-size: 1.75rem;
+		letter-spacing: .1rem;
+		line-height: 2.4rem;
+	}
 }

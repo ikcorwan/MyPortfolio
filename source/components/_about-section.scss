@@ -1,36 +1,41 @@
 .about-me {
-	box-shadow: inset 0px 3px 6px 0px rgba(0,0,0,0.4),inset 0px -3px 6px 0px rgba(0,0,0,0.4);
+	box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, 0.4), inset 0px -3px 6px 0px rgba(0, 0, 0, 0.4);
 	@include background ($about_460, no-repeat, cover, center, center);
+
 	&__content {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-evenly;
 		align-items: center;
-		align-content:center;
+		align-content: center;
 		padding-top: 5vh;
 		padding-bottom: 5vh
 	}
+
 	&__text {
-		flex-basis:100%;
+		flex-basis: 100%;
 	}
 }
 
 
 .card {
-	flex-basis:100%;
+	flex-basis: 100%;
+
 	&__image {
 		max-width: 100%;
 		height: auto;
 	}
+
 	&__title {
 		font-size: 1rem;
 		letter-spacing: .4rem;
 		line-height: 1.5rem;
 		text-transform: uppercase;
 		padding: 1vh 0 0.5vh 0;
-		opacity:.7;
-		color:$colorAccent;
+		opacity: .7;
+		color: $colorAccent;
 	}
+
 	&__subtitle {
 		font-size: 2rem;
 		text-shadow: $textShadowSub;
@@ -48,26 +53,29 @@
 		@include background ($about_800, no-repeat, cover, center, center);
 	}
 }
+
 @include mq (large) {
 	.about-me {
 		&__content {
 			height: 100vh;
-			padding-top:0;
-			padding-bottom:0;
+			padding-top: 0;
+			padding-bottom: 0;
 		}
+
 		&__text {
-			flex-basis:55%;
+			flex-basis: 55%;
 		}
 	}
+
 	.card {
-		flex-basis:30%;
+		flex-basis: 30%;
 	}
 }
 
 @include mq (xlarge) {
 	.about-me {
 		@include background ($about_1366, no-repeat, cover, center, center);
-		
+
 	}
 }
 
@@ -75,5 +83,11 @@
 	.about-me {
 		@include background ($about_1920, no-repeat, cover, center, center);
 	}
-}
 
+	.card {
+		&__title {
+			font-size: 1.3rem;
+			line-height: 1.8rem;
+		}
+	}
+}

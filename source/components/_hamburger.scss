@@ -4,27 +4,29 @@
 	display: block;
 	margin: 0 0 0 1rem;
 	cursor: pointer;
+
 	&__line {
 		height: 3px;
 		margin: 5px 0;
 		border-radius: 9px;
 		transition: all 0.4s ease;
 	}
+
 	&__line-1 {
 		width: 30px;
-		background-color:$colorDirtyWhite;
+		background-color: $colorDirtyWhite;
 	}
+
 	&__line-2 {
 		width: 20px;
 		background-color: $colorWhite;
 	}
+
 	&__line-3 {
 		width: 25px;
 		background-color: $colorAccent;
 	}
-	&:hover .hamburger__line {
-		width: 30px;
-	}
+
 }
 
 
@@ -34,13 +36,15 @@
 	.hamburger__line-1 {
 		transform: rotate(-45deg) translate(-5px, 6px);
 	}
+
 	.hamburger__line-2 {
-	opacity:0;
+		opacity: 0;
 	}
+
 	.hamburger__line-3 {
-	background-color: $colorWhite;
-	width: 30px;
-	transform: rotate(45deg) translate(-5px, -6px);
+		background-color: $colorWhite;
+		width: 30px;
+		transform: rotate(45deg) translate(-5px, -6px);
 	}
 }
 
