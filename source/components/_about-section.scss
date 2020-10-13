@@ -21,10 +21,31 @@
 .card {
 	flex-basis: 100%;
 
-	&__image {
-		max-width: 100%;
-		height: auto;
+	&__picture {
+		position: relative;
 	}
+
+	&__photo {
+		@include box (200px);
+		border-radius: 50%;
+		border: 5px solid rgba(255, 255, 255, 0.4);
+		box-shadow: 0 6px 24px rgba(255, 255, 255, 0.2);
+		margin-bottom: 20px;
+
+	}
+
+	&__logo {
+		@include box (80px);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(calc(-50% + 105px)) translateY(calc(-50% + 60px));
+		border-radius: 50%;
+		border: 5px solid $colorDirtyWhite;
+
+
+	}
+
 
 	&__title {
 		font-size: 1rem;
@@ -45,6 +66,7 @@
 		color: $colorDirtyWhite;
 	}
 }
+
 
 
 // *** Media Queries ***

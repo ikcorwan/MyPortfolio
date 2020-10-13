@@ -1,4 +1,8 @@
 .footer {
+	flex: 1 0 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
 	background: $footerGradient;
 	box-shadow: inset 0px 3px 6px 0px rgba(6, 19, 25, 0.6), inset 0px -3px 6px 0px rgba(6, 19, 25, 0.6);
 
