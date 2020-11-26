@@ -1,17 +1,25 @@
 .privacy {
-	box-shadow: inset 0px -4px 7px 0px rgba(0,0,0,0.5);
-	background: radial-gradient(circle, rgba(124,43,60,1) 0%, rgba(119,42,56,1) 9%, rgba(86,36,45,1) 30%, rgba(59,34,44,1) 54%, rgba(24,36,46,1) 100%);
+	box-shadow: inset 0px -4px 7px 0px rgba(0, 0, 0, 0.5);
+	background: radial-gradient(circle, rgba(124, 43, 60, 1) 0%, rgba(119, 42, 56, 1) 9%, rgba(86, 36, 45, 1) 30%, rgba(59, 34, 44, 1) 54%, rgba(24, 36, 46, 1) 100%);
 }
 
 .privacy__content {
 	padding: 2rem 0;
 }
+
 .privacy__banner {
 	position: relative;
 	width: 100%;
 	height: 75vh;
-	clip-path: polygon(0 0,100% 0,100% 58vh,0 68vh);
+	clip-path: polygon(0 0, 100% 0, 100% 58vh, 0 68vh);
+}
+
+.no-webp .privacy__banner {
 	@include background ($cookiesBackground, no-repeat, cover, 50%, 75%);
+}
+
+.webp .privacy__banner {
+	@include background ($cookiesBackgroundWebp, no-repeat, cover, 50%, 75%);
 }
 
 .privacy__wrap {
@@ -19,14 +27,14 @@
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	align-content:center;
+	align-content: center;
 }
 
 
 
 .privacy__title {
 	margin: 1rem;
-	color:$colorDirtyWhite;
+	color: $colorDirtyWhite;
 	text-shadow: $textShadow;
 	line-height: 2rem;
 	font-weight: 700;
@@ -35,11 +43,9 @@
 
 .privacy__subtitle {
 	padding: 1rem 0;
-	color:$colorDirtyWhite;
+	color: $colorDirtyWhite;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
 }
-
-

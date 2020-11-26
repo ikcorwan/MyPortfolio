@@ -72,9 +72,17 @@
 			<div class="about-me__content">
 				<div class="card">
 					<div class="card__picture">
-						<img class="card__photo" src="images/photo-nawrocki.jpg" loading="lazy" alt="photo-nawrocki">
-						</img>
-						<img class="card__logo" src="images/photo-logo.jpg" loading="lazy" alt="logo-nawrocki">
+						<picture>
+							<source srcset="images/photo-nawrocki.webp" type="image/webp">
+							<source srcset="images/photo-nawrocki.jpg" type="image/jpeg">
+							<img class="card__photo" src="images/photo-nawrocki.jpg" loading="lazy"
+								alt="photo-nawrocki">
+						</picture>
+						<picture>
+							<source srcset="images/photo-logo.webp" type="image/webp">
+							<source srcset="images/photo-logo.jpg" type="image/jpeg">
+							<img class="card__logo" src="images/photo-logo.jpg" loading="lazy" alt="logo-nawrocki">
+						</picture>
 					</div>
 					<h1 class="card__title">Nawrocki Jarosław</h1>
 					<h2 class="card__subtitle">
@@ -131,7 +139,13 @@
 								href="https://github.com/ikcorwan/MyPortfolio">Check the code</a>
 						</div>
 					</div>
-					<img class="project__img" src="images/portfolio.png" loading="lazy" alt="Project image">
+					<picture>
+						<source srcset="images/portfolio.webp" type="image/webp">
+						<source srcset="images/portfolio.png" type="image/png">
+						<img class="project__img" src="images/portfolio.png" loading="lazy"
+							alt="portfolio design image">
+					</picture>
+
 				</div>
 
 			</div>
@@ -153,7 +167,12 @@
 								href="https://github.com/ikcorwan/nawbud">Check the code</a>
 						</div>
 					</div>
-					<img class="project__img" src="images/nawbud.png" loading="lazy" alt="Project image">
+					<picture>
+						<source srcset="images/nawbud.webp" type="image/webp">
+						<source srcset="images/nawbud.png" type="image/png">
+						<img class="project__img" src="images/nawbud.png" loading="lazy"
+							alt="image of the project nabud">
+					</picture>
 				</div>
 			</div>
 			<div class="portfolio__content">
@@ -175,7 +194,12 @@
 								href="https://github.com/ikcorwan/GameRPS">Check the code</a>
 						</div>
 					</div>
-					<img class="project__img" src="images/game.png" loading="lazy" alt="Project image">
+					<picture>
+						<source srcset="images/game.webp" type="image/webp">
+						<source srcset="images/game.png" type="image/png">
+						<img class="project__img" src="images/game.png" loading="lazy"
+							alt="image of the project RPS game">
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -249,7 +273,8 @@
 					</div>
 					<!-- Footer Copyright -->
 					<div class="footer__copyright">
-						<p class="paragraph paragraph--is-center paragraph--theme-dirty-white">Copyright &copy; 2019
+						<p class="paragraph paragraph--is-center paragraph--theme-dirty-white">Copyright &copy;
+							2019
 							<img class="footer__img" src="../images/logo-footer.svg" alt="logo-footer" loading="lazy">
 						</p>
 						<a class="button button__privacy-policy" href="https://nawrocki.io/privacy-policy/"
@@ -274,6 +299,7 @@
 	<script src="javascript/particles.js"></script>
 	<script src="javascript/main.js"></script>
 	<script src="javascript/cookies.js"></script>
+	<script src="javascript/modernizr-webp.js"></script>
 </body>
 
 </html>

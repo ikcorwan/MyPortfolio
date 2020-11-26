@@ -17,6 +17,13 @@
 	}
 }
 
+.no-webp .about-me {
+	@include background ($about_460, no-repeat, cover, center, center);
+}
+
+.webp .about-me {
+	@include background ($about_460webp, no-repeat, cover, center, center);
+}
 
 .card {
 	flex-basis: 100%;
@@ -71,8 +78,12 @@
 
 // *** Media Queries ***
 @include mq (medium) {
-	.about-me {
+	.no-webp .about-me {
 		@include background ($about_800, no-repeat, cover, center, center);
+	}
+
+	.webp .about-me {
+		@include background ($about_800webp, no-repeat, cover, center, center);
 	}
 }
 
@@ -95,15 +106,23 @@
 }
 
 @include mq (xlarge) {
-	.about-me {
+	.no-webp .about-me {
 		@include background ($about_1366, no-repeat, cover, center, center);
 
+	}
+
+	.webp .about-me {
+		@include background ($about_1366webp, no-repeat, cover, center, center);
 	}
 }
 
 @include mq (xxlarge) {
-	.about-me {
+	.no-webp .about-me {
 		@include background ($about_1920, no-repeat, cover, center, center);
+	}
+
+	.webp .about-me {
+		@include background ($about_1920webp, no-repeat, cover, center, center);
 	}
 
 	.card {

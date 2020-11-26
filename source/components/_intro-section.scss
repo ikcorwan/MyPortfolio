@@ -4,6 +4,7 @@
 	height: 100vh;
 	display: flex;
 	z-index: -1;
+
 	&__wrap {
 		position: absolute;
 		top: 0;
@@ -11,15 +12,24 @@
 		@include box(100%);
 		clip: rect(0, auto, auto, 0);
 	}
+
 	&__particles {
 		top: 0;
 		left: 0;
 		@include box(100%);
-		@include background ($intro_460, no-repeat, cover, 50%, 50%);
 	}
+
 	&__canvas {
 		opacity: 0.8;
 	}
+}
+
+.no-webp .banner__particles {
+	@include background ($intro_460, no-repeat, cover, 50%, 50%);
+}
+
+.webp .banner__particles {
+	@include background ($intro_460webp, no-repeat, cover, 50%, 50%);
 }
 
 .intro {
@@ -31,19 +41,23 @@
 		left: 0;
 		z-index: 0;
 	}
+
 	&__title {
 		padding: 1rem;
-		color:$colorWhite;
+		color: $colorWhite;
 		text-shadow: $textShadow;
 	}
+
 	&__subtitle {
 		padding: 1.2rem 0 2rem 0;
-		color:$colorDirtyWhite;
+		color: $colorDirtyWhite;
 		text-shadow: $textShadowSub;
 	}
+
 	&__btn {
 		margin-top: 1.5vh;
 	}
+
 	&__arrow {
 		display: none;
 	}
@@ -51,12 +65,13 @@
 
 
 .hr-text {
-	max-width: 90%; 
+	max-width: 90%;
 	line-height: 1rem;
 	position: relative;
 	border: 0;
 	opacity: .4;
-	text-shadow:none;
+	text-shadow: none;
+
 	&:before {
 		content: '';
 		background: linear-gradient(to right, transparent, $colorDirtyWhite, transparent);
@@ -65,13 +80,14 @@
 		top: 50%;
 		@include box (100%, 1px);
 	}
+
 	&:after {
 		content: attr(data-content);
 		position: relative;
 		display: inline-block;
 		padding: 0.2rem 0.5rem;
 		line-height: 1.5rem;
-		color:$colorSilver;
+		color: $colorSilver;
 		background-color: $colorDirtyWhite;
 	}
 }
@@ -79,10 +95,13 @@
 // *** Media Queries ***
 
 @include mq (medium) {
-	.banner {
-		&__particles {
-			@include background ($intro_800, no-repeat, cover, center, center);
-		}
+
+	.no-webp .banner__particles {
+		@include background ($intro_800, no-repeat, cover, center, center);
+	}
+
+	.webp .banner__particles {
+		@include background ($intro_800webp, no-repeat, cover, center, center);
 	}
 }
 
@@ -92,33 +111,39 @@
 			position: fixed;
 		}
 	}
+
 	.intro {
 		&__text {
-			top:30%;
+			top: 30%;
 		}
+
 		&__arrow {
 			display: block;
 			margin: 5rem;
 		}
 	}
+
 	.hr-text {
 		max-width: 50%;
 	}
 }
 
 @include mq (xlarge) {
-	.banner {
-		&__particles {
-			@include background ($intro_1366, no-repeat, cover, center, center);
-		}
+	.no-webp .banner__particles {
+		@include background ($intro_1366, no-repeat, cover, center, center);
+	}
+
+	.webp .banner__particles {
+		@include background ($intro_1366webp, no-repeat, cover, center, center);
 	}
 }
 
 @include mq (xxlarge) {
-	.banner {
-		&__particles {
-			@include background ($intro_1920, no-repeat, cover, center, center);
-		}
+	.no-webp .banner__particles {
+		@include background ($intro_1920, no-repeat, cover, center, center);
+	}
+
+	.webp .banner__particles {
+		@include background ($intro_1920webp, no-repeat, cover, center, center);
 	}
 }
-

@@ -23,29 +23,49 @@ $logo: "../images/logo.svg";
 $logoFooter: "../images/logo-footer.svg";
 
 // *** IMAGES ***
-	
-	// *** HOME BG ***
-		$intro_460: "../images/forest-litter_460.jpg";
-		$intro_800: "../images/forest-litter_800.jpg";
-		$intro_1366: "../images/forest-litter_1366.jpg";
-		$intro_1920: "../images/forest-litter_1920.jpg";
-	
-	// *** ABOUT BG ***
-		
-		$about_460: "../images/abstract-bg_460.png";
-		$about_800: "../images/abstract-bg_800.png";
-		$about_1366: "../images/abstract-bg_1366.png";
-		$about_1920: "../images/abstract-bg_1920.png";
-		
-	// *** CONTACT BG ***
-		
-		$contact_460: "../images/starry-sky_460.jpg";
-		$contact_800: "../images/starry-sky_800.jpg";
-		$contact_1366: "../images/starry-sky_1366.jpg";
-		$contact_1920: "../images/starry-sky_1920.jpg";
+
+// *** HOME BG ***
+$intro_460: "../images/forest-litter_460.jpg";
+$intro_800: "../images/forest-litter_800.jpg";
+$intro_1366: "../images/forest-litter_1366.jpg";
+$intro_1920: "../images/forest-litter_1920.jpg";
+
+//*** HOME BG - WEBP ***
+$intro_460webp: "../images/forest-litter_460.webp";
+$intro_800webp: "../images/forest-litter_800.webp";
+$intro_1366webp: "../images/forest-litter_1366.webp";
+$intro_1920webp: "../images/forest-litter_1920.webp";
+
+// *** ABOUT BG ***
+$about_460: "../images/abstract-bg_460.png";
+$about_800: "../images/abstract-bg_800.png";
+$about_1366: "../images/abstract-bg_1366.png";
+$about_1920: "../images/abstract-bg_1920.png";
+
+// *** ABOUT BG - WEBP ***
+$about_460webp: "../images/abstract-bg_460.webp";
+$about_800webp: "../images/abstract-bg_800.webp";
+$about_1366webp: "../images/abstract-bg_1366.webp";
+$about_1920webp: "../images/abstract-bg_1920.webp";
 
 
+// *** CONTACT BG ***
+$contact_460: "../images/starry-sky_460.jpg";
+$contact_800: "../images/starry-sky_800.jpg";
+$contact_1366: "../images/starry-sky_1366.jpg";
+$contact_1920: "../images/starry-sky_1920.jpg";
 
-$bgGradient:radial-gradient(circle, rgba(103,38,48,1) 0%, rgba(94,32,44,1) 36%, rgba(56,29,37,1) 70%, rgba(23,28,37,1) 100%);
-$footerGradient:radial-gradient(circle, rgba(6,17,23,1) 0%, rgba(8,25,33,1) 50%, rgba(6,17,23,1) 100%);
+// *** CONTACT BG - WEBP ***
+$contact_460webp: "../images/starry-sky_460.webp";
+$contact_800webp: "../images/starry-sky_800.webp";
+$contact_1366webp: "../images/starry-sky_1366.webp";
+$contact_1920webp: "../images/starry-sky_1920.webp";
+
+//*** COOKIES BG ***
 $cookiesBackground: "../images/cookies-banner.png";
+//*** COOKIES BG - WEBP ***
+$cookiesBackgroundWebp: "../images/cookies-banner.webp";
+
+
+$bgGradient:radial-gradient(circle, rgba(103, 38, 48, 1) 0%, rgba(94, 32, 44, 1) 36%, rgba(56, 29, 37, 1) 70%, rgba(23, 28, 37, 1) 100%);
+$footerGradient:radial-gradient(circle, rgba(6, 17, 23, 1) 0%, rgba(8, 25, 33, 1) 50%, rgba(6, 17, 23, 1) 100%);
